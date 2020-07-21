@@ -100,9 +100,9 @@ spec:
         - --ssh-keygen-dir=/var/fluxd/keygen
 
         # replace or remove the following URL
-        - --git-url=git@github.com:rrajaram-pivotal/gitops-tutorial.git
+        - --git-url=git@github.com:rrajaram-pivotal/tanzu-gitops.git
         - --git-path=deploy/kubernetes
-        - --git-branch=master
+        - --git-branch=development
 
         # include these next two to connect to an "upstream" service
         # (e.g., Weave Cloud). The token is particular to the service.
