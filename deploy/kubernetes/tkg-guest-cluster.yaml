@@ -7,11 +7,11 @@ spec:
   topology:
     controlPlane:
       count: 1
-      class: best-effort-xsmall
+      class: guaranteed-medium
       storageClass: pacific-gold-storage-policy
     workers:
-      count: 3
-      class: best-effort-xsmall
+      count: 2
+      class: guaranteed-medium
       storageClass: pacific-gold-storage-policy
   distribution:
     version: v1.16.12
