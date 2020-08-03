@@ -1,0 +1,17 @@
+apiVersion: run.tanzu.vmware.com/v1alpha1
+kind: TanzuKubernetesCluster
+metadata:
+  name: dev-guest-cluster
+  namespace: argocd
+spec:
+  topology:
+    controlPlane:
+      count: 1
+      class: guaranteed-medium
+      storageClass: pacific-gold-storage-policy
+    workers:
+      count: 1
+      class: guaranteed-medium
+      storageClass: pacific-gold-storage-policy
+  distribution:
+    version: v1.16.12
